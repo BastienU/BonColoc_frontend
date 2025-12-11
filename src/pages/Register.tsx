@@ -8,7 +8,7 @@ const Register: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/login");
+    navigate("/");
   };
 
   return (

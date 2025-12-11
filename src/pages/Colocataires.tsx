@@ -60,7 +60,7 @@ const Colocataires: React.FC = () => {
       <div className="search-filter">
         <input
           type="text"
-          placeholder="Rechercher un étudiant..."
+          placeholder="Rechercher un colocataire potentiel..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="search-input"
