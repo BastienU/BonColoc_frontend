@@ -1,0 +1,90 @@
+.hero-small {
+  width: 85%;
+  margin: 120px auto 20px auto;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Search & Filter */
+.search-filter {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Student list */
+.student-list {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 0 16px;
+}
+
+.student-card {
+  display: flex;
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  align-items: center;
+  gap: 16px;
+}
+
+.student-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.student-info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.student-status {
+  color: #555;
+  margin: 4px 0;
+}
+
+.student-stars {
+  color: #bc3ce1;
+}
+
+.student-interests {
+  color: #333;
+}
+
+.no-results {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
