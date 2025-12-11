@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Colocataires from "../pages/Colocataires";
+import Appartement from "../pages/Appartement";
 
 const Hero: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const Hero: React.FC = () => {
 
             <div className="hero-buttons">
                 <Link to="/annonces" className="btn hero-btn">Trouver mon Colocataire</Link>
-                <Link to="/appartements" className="btn white-btn">Trouver un Appartement</Link>
+                <Link to="/appartement" className="btn white-btn">Trouver un Appartement</Link>
             </div>
         </div>
     </section>

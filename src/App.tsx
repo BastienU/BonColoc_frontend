@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Colocataires from "./pages/Colocataires";
+import Appartement from "./pages/Appartement";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/annonces" element={<Colocataires />} />
+        <Route path="/appartement" element={<Appartement />} />
       </Routes>
     </BrowserRouter>
   );

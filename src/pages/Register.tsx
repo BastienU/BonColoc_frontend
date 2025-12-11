@@ -14,47 +14,68 @@ const Register: React.FC = () => {
   return (
     <>
       <Navbar />
-    <main className="register-container">
-      <h1>Formulaire d'inscription</h1>
+      <main className="register-container">
+        <h1>Formulaire d'inscription</h1>
 
-      <form className="register-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="firstname">Prénom :</label>
-          <input type="text" id="firstname" name="firstname" required />
-        </div>
+        <form className="register-form" onSubmit={handleSubmit}>
+          <div className="form-group horizontal">
+            <label className="form-label-inline">Statut :</label>
 
-        <div className="form-group">
-          <label htmlFor="lastname">Nom :</label>
-          <input type="text" id="lastname" name="lastname" required />
-        </div>
+            <div className="radio-group">
+              <label>
+                <input type="radio" name="role" value="locataire" required />
+                Locataire
+              </label>
 
-        <div className="form-group">
-          <label htmlFor="email">Email :</label>
-          <input type="email" id="email" name="email" required />
-        </div>
+              <label>
+                <input type="radio" name="role" value="proprietaire" />
+                Propriétaire
+              </label>
+            </div>
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="password">Mot de passe :</label>
-          <input type="password" id="password" name="password" required />
-        </div>
+          <div className="form-group">
+            <label htmlFor="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="confirm-password">Confirmer le mot de passe :</label>
-          <input type="password" id="confirm-password" name="confirm-password" required />
-        </div>
+          <div className="form-group">
+            <label htmlFor="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
 
-        <button type="submit" className="register-submit-btn">
-          Créer un compte
-        </button>
+          <div className="form-group">
+            <label htmlFor="interest">Centres d'interêts :</label>
+            <textarea id="interest" name="interest" rows={4} required></textarea>
+          </div>
 
-        <p className="login-text">
-          Déjà un compte ?<br />
-          <Link to="/login" className="login-btn">
-            Se connecter
-          </Link>
-        </p>
-      </form>
-    </main>
+          <div className="form-group">
+            <label htmlFor="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="confirm-password">Confirmer le mot de passe :</label>
+            <input type="password" id="confirm-password" name="confirm-password" required />
+          </div>
+
+          <button type="submit" className="register-submit-btn">
+            Créer un compte
+          </button>
+
+          <p className="login-text">
+            Déjà un compte ?<br />
+            <Link to="/login" className="login-btn">
+              Se connecter
+            </Link>
+          </p>
+        </form>
+      </main>
     </>
   );
 };
