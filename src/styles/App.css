@@ -108,7 +108,7 @@ a {
 }
 
 .hero-buttons {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -132,7 +132,7 @@ a {
 /* Steps */
 .steps {
   width: 85%;
-  margin: 60px auto;
+  margin: 90px auto;
   text-align: center;
 }
 
