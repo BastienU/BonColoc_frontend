@@ -83,8 +83,39 @@
   color: #333;
 }
 
+.contact-btn {
+  margin-left: auto;
+  background-color: #bc3ce1;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: #f9e9ff;
+  color: rgb(0, 0, 0);
+}
+
 .no-results {
   text-align: center;
   color: #777;
   padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .student-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    margin-left: 0;
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+  }
 }

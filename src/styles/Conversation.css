@@ -1,0 +1,92 @@
+.conversation-container {
+  max-width: 700px;
+  margin: 100px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.back-btn {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.conversation-header {
+  position: relative;
+  background-color: #bc3ce1;
+  padding: 15px 20px;
+  text-align: center;
+  color: white;
+}
+
+.messages-area {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.their-message {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.my-message {
+  background-color: #bc3ce1;
+  color: white;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.input-area button {
+  background-color: #bc3ce1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.input-area button:hover {
+  opacity: 0.9;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import "./../styles/Colocataires.css";
+import { Link } from "react-router-dom";
 
 interface Student {
   id: number;
@@ -93,6 +94,13 @@ const Colocataires: React.FC = () => {
               </p>
               <p className="student-interests">{student.interests}</p>
             </div>
+            <Link
+              to="/conversation"
+              state={{ name: student.name }}
+              className="contact-btn"
+            >
+              Contacter
+            </Link>
           </div>
         ))}
       </div>

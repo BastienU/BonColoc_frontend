@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Colocataires from "./pages/Colocataires";
 import Appartement from "./pages/Appartement";
+import Conversation from "./pages/Conversation";
+
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/annonces" element={<Colocataires />} />
         <Route path="/appartement" element={<Appartement />} />
+        <Route path="/conversation" element={<Conversation />} />
       </Routes>
     </BrowserRouter>
   );
